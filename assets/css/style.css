@@ -85,3 +85,8 @@ img {
 .navbar .nav-link:hover {
     color: var(--color-pop);
 }
+
+.col {
+    display: flex;
+    justify-content: center;
+}
