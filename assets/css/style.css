@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+/* @import url('https://fonts.googleapis.com/css?family=Nixie One'); */
+
+:root {
+    --color-darkest: #829b7c;
+    --color-dark: #be8f7f;
+    --color-heading: #f6f6f6;
+    --color-body: #dad4c0;
+    --color-pop: #dcc278;
+    --color-hover: #edc24a;
+    --nav-width: 240px;
+    --font-base: "Nunito";
+}
+
+body {
+    background-color: var(--color-darkest);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h4,h6 {
+    color: var(--color-heading);
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+a:hover {
+    color: var(--color-pop);
+    text-decoration: underline;
+}
+.project-link {
+    color: var(--color-pop);
+}
+.project-link:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+.heading {
+    color: var(--color-pop);
+}
+
+.bg-base {
+    background-color: var(--color-dark);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -5px 5px 1px var(--color-pop);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--color-dark);
+}
+
+.navbar .nav-link {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-pop);
+}
