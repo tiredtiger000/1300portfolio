@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+:root {
+    --color-darkest: #829b7c;
+    --color-dark: #be8f7f;
+    --color-heading: #f6f6f6;
+    --color-body: #dad4c0;
+    --color-pop: #dcc278;
+    --color-hover: #edc24a;
+    --nav-width: 240px;
+    --font-base: "Nunito";
+}
+
+.gallery-persona-container {
+    /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-sketch-container {
+    /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-storyboard-container {
+    /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.white {
+    color: var(--color-heading);
+    /* color: var(--color-pop); */
+}
+.yellow {
+    color: var(--color-pop);
+    /* color: var(--color-heading); */
+}
+
+h1{
+    font-family: var(--font-base), sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+h2{
+    font-family: var(--font-base), sans-serif;
+}
+h3{
+    font-family: var(--font-base), sans-serif;
+
+}
+
+h4{
+    /* font-family: 'Optima', 'Segoe', 'Segoe UI', 'Calibri', 'Arial', sans-serif; */
+    font-family: var(--font-base), sans-serif;
+}
+
+ol{
+    /* font-family: 'Optima', 'Segoe', 'Segoe UI', 'Calibri', 'Arial', sans-serif; */
+    font-family: var(--font-base), sans-serif;
+}
+
+ul{
+    /* font-family: 'Optima', 'Segoe', 'Segoe UI', 'Calibri', 'Arial', sans-serif; */
+    font-family: var(--font-base), sans-serif;
+}
+
+/* BODY */
+.main {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+    
+    background-color: var(--color-darkest);
+    color: var(--color-body);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+body {
+    font-family: var(--font-base), sans-serif;
+}
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    background-color: var(--color-dark);
+    justify-content: center;
+}
+.nb {
+    margin-left: 22rem;
+    color: var(--color-heading);
+}
+
+
+.navbar .nav-link {
+    font-family: var(--font-base), sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
