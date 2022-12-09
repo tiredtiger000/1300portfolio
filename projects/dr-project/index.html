@@ -24,6 +24,7 @@
                     </div>
                     
                     <p> 
+                        This was fourth and final project assigned to us in this course. <br>
                         I developed my first interactive interface with React by creating a list-based interface. I used interface components, and these were
                         tied to an internal data state. <br>
                         <br>
@@ -69,7 +70,9 @@
                 makes the entire process extremely efficient, making typical tasks to be completed quickly and memorable for frequent users. In addition, 
                 the button stands out with a cart icon to indicate that it can be added to the cart.
             </p>
-            <h3>Organization of Components, How Data is Passed Down Through Components, How the User Triggers State Changes</h3>
+            <div class="yellow">
+                <h3>Organization of Components, How Data is Passed Down Through Components, How the User Triggers State Changes</h3>
+            </div>
             <p>
                 I had three main components: Header.js, Basket.js, and Main.js. This separates them into three big sections of the website. The title, 
                 the content of the food items (cards), and then the side bar with the cart basket and the sorting/filter options. They're organized in our 
@@ -78,7 +81,7 @@
             <div class="tab">
                 <ul>
                     <li>
-                        Header.js: it does not have any props since it's just the title of the website which I named: "Tired Tiger's Korean Food." It's only text
+                        <u>Header.js</u>: it does not have any props since it's just the title of the website which I named: "Tired Tiger's Korean Food." It's only text
                     </li>
                     <li>
                         Main.js: this is the main area where all the food items are displayed. It has two props: foodItem and addToCart. foodItem is a single 
@@ -89,7 +92,7 @@
                         items (which is done in App.js)
                     </li>
                     <li>
-                        Basket.js: this component deals with all filtering and sorting. It has two props: foodData and updateFoodList. foodData is pretty 
+                        <u>Basket.js</u>: this component deals with all filtering and sorting. It has two props: foodData and updateFoodList. foodData is pretty 
                         self-explanatory: it's a list of all our food items. updateFoodList is a function that uses useState to update our new list of foods 
                         depending on what's being filtered or sorted and show those new foods on our main area with the food cards. The user triggers the 
                         sorting elements through a dropdown that gives two option: popularity and price. When popular is selected, we sort it in ascending 
@@ -101,7 +104,7 @@
                         using both filter and sort options).
                     </li>
                     <li>
-                        In App.js: All the components are organized and visualized in my App.js file. Updating my foodList and my cartList is done in here 
+                        <u>App.js</u>: All the components are organized and visualized in my App.js file. Updating my foodList and my cartList is done in here 
                         using useState(). Something that is very specifically done in my App.js is my removing from my cartList in my removeCartItem(item) 
                         function. In order to remove a single item without removing all duplicates from my cartList, I needed to use the .filter((_, item_index))
                         with the empty _ to make it specific to the item that we're trying to remove.
